@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div id="header">
+    <div id="logo">
+      Code Player
+    </div>
+
+    <div id="buttonContainer">
+      <div class="toggleButton active" id="html">HTML</div>
+      <div class="toggleButton" id="css">CSS</div>
+      <div class="toggleButton" id="javascript">Javascript</div>
+      <div class="toggleButton active" id="output">Output</div>
+    </div>
+
+  </div>          <!--end of header-div-->
+
+  <div id="bodyContainer">
+    <textarea id="htmlPanel" class="panel"><p id="para">Hello World!</p></textarea>
+    <textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
+    <textarea id="javascriptPanel" class="panel hidden">document.getElementById("para").innerHTML = "Hello";</textarea>
+    <iframe id="outputPanel" class="panel"></iframe>
+
+  </div>
+
+
+  <script src="jquery-ui/external/jquery/jquery.js"></script>
+  <script src="jquery-ui/jquery-ui.js"></script> 
+  <script src="index.js"></script>
+</body>
+</html>
